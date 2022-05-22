@@ -39,8 +39,6 @@ export default {
    */
   plugins: [
     { src: '~/plugins/i18n.js', mode: 'client' },
-    { src: '~/plugins/vue-apexcharts.js', mode: 'client' },
-
   ],
   /*
    ** Auto import components
