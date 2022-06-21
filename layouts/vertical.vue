@@ -1,6 +1,4 @@
 <script>
-import { mapState } from "vuex";
-
 /**
  * Vertical layout
  */
@@ -40,7 +38,6 @@ export default {
   data() {
     return {};
   },
-  computed: mapState(["layout"]),
 };
 </script>
 
@@ -48,7 +45,7 @@ export default {
   <!-- Begin page -->
   <div id="layout-wrapper">
     <Topbar />
-    <Sidebar :type="layout.leftSidebarType" :width="layout.layoutWidth" />
+    <Sidebar :type="light" :width="fluid" />
     <!-- ============================================================== -->
     <!-- Start right Content here -->
     <!-- ============================================================== -->

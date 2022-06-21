@@ -39,8 +39,6 @@ export default {
    */
   plugins: [
     { src: '~/plugins/i18n.js', mode: 'client' },
-    { src: '~/plugins/vue-apexcharts.js', mode: 'client' },
-
   ],
   /*
    ** Auto import components
@@ -58,7 +56,6 @@ export default {
     // Doc: https://bootstrap-vue.js.org
     "bootstrap-vue/nuxt",
     // Doc: https://github.com/nuxt/content
-    "@nuxt/content"
   ],
   /*
    ** Content module configuration

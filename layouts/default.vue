@@ -1,6 +1,4 @@
 <script>
-import { mapState } from "vuex";
-
 import Vertical from "./vertical";
 import Horizontal from "./horizontal";
 
@@ -9,7 +7,6 @@ export default {
     Vertical,
     Horizontal,
   },
-  computed: mapState(["layout"]),
   mounted() {
     document.body.classList.remove("authentication-bg");
   },
@@ -19,19 +16,9 @@ export default {
 <template>
   <div>
     <!-- Begin page -->
-    <Vertical
-      v-if="layout.layoutType === 'vertical'"
-      :layout="layout.layoutType"
-    >
+    <Vertical>
       <Nuxt />
     </Vertical>
     <!-- END layout-wrapper -->
-
-    <Horizontal
-      v-if="layout.layoutType === 'horizontal'"
-      :layout="layout.layoutType"
-    >
-      <slot />
-    </Horizontal>
   </div>
 </template>

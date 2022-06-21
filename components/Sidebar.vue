@@ -1,7 +1,6 @@
 <script>
 import MetisMenu from "metismenujs/dist/metismenujs";
 
-import { mapState } from 'vuex'
 import {
     menuItems
 } from "./menu";
@@ -25,7 +24,7 @@ export default {
             required: true,
         },
     },
-    computed: mapState(["layout"]),
+
     watch: {
         type: {
             immediate: true,

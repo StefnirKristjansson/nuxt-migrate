@@ -1,5 +1,4 @@
 <script>
-import { mapState } from "vuex";
 /**
  * Horiontal layout
  */
@@ -16,14 +15,13 @@ export default {
       document.body.classList.remove("right-bar-enabled");
     },
   },
-  computed: mapState(["layout"]),
 };
 </script>
 
 <template>
   <!-- Begin page -->
   <div id="layout-wrapper">
-    <HorizontalTopbar :type="layout.topbar" :width="layout.layoutWidth" />
+    <HorizontalTopbar :type="colored" :width="fluid" />
     <!-- ============================================================== -->
     <!-- Start right Content here -->
     <!-- ============================================================== -->
